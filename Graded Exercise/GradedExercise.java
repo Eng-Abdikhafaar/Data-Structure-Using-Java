@@ -23,6 +23,7 @@ class Loan {
         this.annualInterestRate = annualInterestRate;
         this.numberOfYears = numberOfYears;
         this.loanAmount = loanAmount;
+        this.loanDate = new Date();
     }
 
     // Getters
@@ -219,6 +220,20 @@ public class GradedExercise {
         System.out.println("Loan 2:");
         System.out.println("Annual Interest Rate: " + ln2.getAnnualInterestRate());
         System.out.println("Number of Years: " + ln2.getNumberOfYears());
+        System.out.println("Loan Amount: " + ln2.getLoanAmount());
+        System.out.println("Monthly Payment: " + ln2.getMonthlyPayment());
+        System.out.println("Total Payment: " + ln2.getTotalPayment());
+        System.out.println("Loan Date: " + ln2.getLoanDate());
+
+        System.out.println();
+
+        System.out.println("After Modifying ---------------------");
+
+        ln2.setAnnualInterestRate(6.8);
+        ln2.setNumberOfYears(7);
+        ln2.setLoanAmount(7000);
+        System.out.println("Annual Interest Rate: " + ln2.getAnnualInterestRate());
+        System.out.println("Number Of Years: " + ln2.getNumberOfYears());
         System.out.println("Loan Amount: " + ln2.getLoanAmount());
         System.out.println("Monthly Payment: " + ln2.getMonthlyPayment());
         System.out.println("Total Payment: " + ln2.getTotalPayment());
